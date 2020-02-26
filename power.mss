@@ -1,4 +1,4 @@
-@power-line-color: #888;
+@power-line-color: @dark-roads-fill;
 
 #power-line {
   [zoom >= 14] {
@@ -32,21 +32,24 @@
   }
 }
 
+/*
 #power-towers {
-  [power = 'tower'] {
-    [zoom >= 14] {
-      marker-file: url('symbols/man_made/power_tower_small.svg');
-      marker-width: 3;
-    }
-    [zoom >= 15] {
-      marker-file: url('symbols/man_made/power_tower.svg');
-      marker-width: 5;
-    }
-    [zoom >= 17] {
-      marker-width: 7;
-    }
+  [zoom >= 14] {
+    marker-file: url('symbols/man_made/power_tower_small.svg');
+    marker-width: 3;
   }
-  [power = 'pole'][zoom >= 16] {
+  [zoom >= 15] {
+    marker-file: url('symbols/man_made/power_tower.svg');
+    marker-width: 5;
+  }
+  [zoom >= 17] {
+    marker-width: 7;
+  }
+}
+*/
+
+#power-poles {
+  [zoom >= 16] {
     marker-file: url('symbols/square.svg');
     marker-fill: #928f8f;
     marker-width: 3;

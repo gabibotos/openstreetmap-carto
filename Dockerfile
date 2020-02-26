@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 # Style dependencies
 RUN apt-get update && apt-get install --no-install-recommends -y \
-    ca-certificates curl gnupg postgresql-client python fonts-hanazono \
+    ca-certificates curl gnupg postgresql-client python3 python3-distutils fonts-hanazono \
     fonts-noto-cjk fonts-noto-hinted fonts-noto-unhinted mapnik-utils \
     nodejs npm ttf-unifont unzip && rm -rf /var/lib/apt/lists/*
 
