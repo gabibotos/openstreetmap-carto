@@ -3129,7 +3129,7 @@
         text-fill: darken(@bare_ground, 50%);
       }
       [feature = 'natural_sand'] {
-        text-fill: darken(@sand, 50%);
+        text-fill: @dark-transportation;
       }
     }
   }

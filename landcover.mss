@@ -494,7 +494,7 @@
   [feature = 'landuse_brownfield'],
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
-      polygon-fill: @construction;
+      polygon-fill: @dark-transportation;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
@@ -536,9 +536,7 @@
   }
 
   [feature = 'natural_sand'][zoom >= 5] {
-    polygon-fill: @sand;
-    [way_pixels >= 4]  { polygon-gamma: 0.75; }
-    [way_pixels >= 64] { polygon-gamma: 0.3;  }
+    polygon-fill: @dark-transportation;
   }
 
   [feature = 'natural_heath'][zoom >= 5] {
@@ -641,7 +639,7 @@
   }
 
   [feature = 'aeroway_apron'][zoom >= 10] {
-    polygon-fill: @apron;
+    polygon-fill: @dark-transportation;
     [way_pixels >= 4]  { polygon-gamma: 0.75; }
     [way_pixels >= 64] { polygon-gamma: 0.3;  }
   }

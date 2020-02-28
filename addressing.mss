@@ -55,7 +55,7 @@ no official postal addresses) */
 #building-text {
   [zoom >= 14][way_pixels > 3000],
   [zoom >= 17] {
-    text-name: "[name]";
+    text-name: "";
     text-placement: interior;
     text-face-name: @book-fonts;
     text-fill: #444;

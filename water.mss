@@ -202,7 +202,7 @@
         background/line-color: @land-color;
       }
       water/line-width: 2;
-      water/line-color: @water-color;
+      water/line-color: white;
 
       [bridge = 'yes'] {
         bridgecasing/line-color: black;
