@@ -406,7 +406,7 @@
       text-name: "[name]";
       text-fill: @placenames;
       text-face-name: @book-fonts;
-      text-halo-fill: white;
+      text-halo-fill: @dark-transportation;
       text-halo-radius: @standard-halo-radius * 1.5;
       [zoom >= 14] {
         text-size: 10;
@@ -428,7 +428,7 @@
         text-line-spacing: -0.60; // -0.05 em
         text-margin: 8.4; // 0.7 em
         text-fill: @placenames-light;
-        text-halo-fill: white;
+        text-halo-fill: @dark-transportation;
       }
     }
   }

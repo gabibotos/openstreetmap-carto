@@ -3373,7 +3373,7 @@
   ::canopy {
     opacity: 0.3;
     [natural = 'tree_row'] {
-      line-color: green;
+      line-color: @dark-transportation;
       line-cap: round;
       line-width: 2.5;
       [zoom >= 17] {
