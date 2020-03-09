@@ -37,7 +37,7 @@ settings = {
 
     2: {
         'directory': 'ne_110m_admin_0_boundary_lines_land',
-        'url': 'https://github.com/gabibotos/openstreetmap-carto/raw/data/ne_110m_admin_0_boundary_lines_land.zip',  # noqa
+        'url': 'https://github.com/gabibotos/openstreetmap-carto/raw/master/data/ne_110m_admin_0_boundary_lines_land.zip',  # noqa
         'type': 'zip_dir',
         'shp_basename': ['ne_110m_admin_0_boundary_lines_land'],
         'long_opt': '--ne-admin'
