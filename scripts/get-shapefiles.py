@@ -127,8 +127,9 @@ def download_file(
             local_file_size = int(os.path.getsize(file_name))
         meta_func = meta.getheaders if hasattr(
             meta, 'getheaders') else meta.get_all
-        host_file_modified = email.utils.parsedate(
-            meta_func("last-modified")[0])
+        # host_file_modified = email.utils.parsedate(
+        #     meta_func("last-modified")[0])
+        host_file_modified = time.localtime()
         meta_length = meta_func("Content-Length")
         host_file_size = None
         if meta_length:
