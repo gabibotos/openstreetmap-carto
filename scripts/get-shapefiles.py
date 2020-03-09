@@ -17,6 +17,7 @@ import time
 import email.utils
 import atexit
 import time
+import traceback
 
 import urllib.request as urllib2
 import urllib.parse as urlparse
@@ -36,7 +37,7 @@ settings = {
 
     2: {
         'directory': 'ne_110m_admin_0_boundary_lines_land',
-        'url': 'http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip',  # noqa
+        'url': 'https://github.com/gabibotos/openstreetmap-carto/raw/data/ne_110m_admin_0_boundary_lines_land.zip',  # noqa
         'type': 'zip_dir',
         'shp_basename': ['ne_110m_admin_0_boundary_lines_land'],
         'long_opt': '--ne-admin'
@@ -198,6 +199,7 @@ def download_file(
             str(e.code) +
             ", error reason: " + e.reason + ")\n")
     except Exception as e:
+        traceback.print_exc()
         sys.exit("\n\n   Error: download failed.\n" + str(e) + "\n")
 
 
